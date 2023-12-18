@@ -1,0 +1,44 @@
+nav {
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+    padding: 0px 150px;
+    padding-top: 10px;
+    height: 70px;
+    a {
+        display: flex;
+            align-items: center;
+            color: black;
+        h1 {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        gap: 40px;
+        padding-right: 100px;
+        p {
+            cursor: pointer;
+        }
+    }
+    .cart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        i {
+            cursor: pointer;
+        }
+        input {
+            padding: 7px;
+            border: none;
+            background-color: rgb(236, 235, 235);
+        }
+    }
+}

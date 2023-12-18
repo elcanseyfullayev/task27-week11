@@ -1,0 +1,429 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+#opening {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 150px;
+
+    .menu {
+        border-right: 1px solid gainsboro;
+        padding-top: 20px;
+        padding-right: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 17px;
+
+        p {
+            cursor: pointer;
+        }
+    }
+
+    .slider {
+        padding-left: 100px;
+    }
+}
+
+.carousel-item {
+    min-width: 1000px !important;
+    min-height: 430px !important;
+}
+
+.carousel-image {
+    min-width: 1000px !important;
+    min-height: 430px !important;
+}
+
+.carousel-container {
+    min-width: 1000px !important;
+    min-height: 430px !important;
+}
+
+.prev,
+.next {
+    display: none;
+}
+
+#sales {
+    padding: 30px 0px;
+    border-bottom: 1px solid gainsboro;
+    margin: 0 150px;
+
+    .salesHeader {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+}
+
+.slick-slide {
+    div {
+        img {
+            height: 250px;
+            width: 300px;
+        }
+    }
+}
+
+#category {
+    padding: 40px 0px;
+    border-bottom: 1px solid gainsboro;
+    margin: 0 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .catBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .catBoxes {
+            border: 1px solid gainsboro;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 130px;
+            width: 180px;
+            cursor: pointer;
+            transition: 400ms;
+            gap: 10px;
+
+            &:hover {
+                border: 1px solid black;
+            }
+
+            i {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+#best {
+    padding: 40px 150px;
+
+    .products {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .productContainer {
+            border: 1px solid gainsboro;
+            padding: 10px;
+            transition: 400ms;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            &:hover {
+                border: 1px solid black;
+            }
+
+            p {
+                font-weight: bold;
+            }
+
+            .price {
+                color: rgb(243, 40, 40);
+            }
+
+            img {
+                border-bottom: 1px solid gainsboro;
+                height: 200px;
+                width: 250px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#enhance {
+    background-color: black;
+    position: relative;
+    max-width: 100%;
+    height: 500px;
+    margin: 40px 150px;
+    padding: 60px 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    p {
+        color: lawngreen;
+    }
+
+    h1 {
+        font-size: 60px;
+        width: 550px;
+    }
+
+    div {
+        background-color: lawngreen;
+        border: 1px solid lawngreen;
+        height: 60px;
+        width: 200px;
+        font-size: 22px;
+        border-radius: 5px;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        transition: 300ms;
+
+        &:hover {
+            background-color: black;
+        }
+    }
+
+    img {
+        height: 600px;
+        position: absolute;
+        right: 60px;
+        top: -50px;
+    }
+}
+
+#explore {
+    padding: 40px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+
+        div {
+            width: 200px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .image {
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    height: 200px;
+                    width: 200px;
+
+                }
+
+                i {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    font-size: 18px;
+                    background-color: white;
+                    padding: 5px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: 300ms;
+
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+
+                .fa-eye {
+                    top: 45px;
+                }
+
+                .imgHover {
+                    position: absolute;
+                    bottom: -50px;
+                    transition: 400ms;
+
+                    .addCart {
+                        background-color: black;
+                        color: white;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        transition: 400ms;
+
+                        &:hover {
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+
+                &:hover .imgHover {
+                    bottom: 0;
+                }
+            }
+
+            .price {
+                color: rgb(243, 40, 40);
+            }
+        }
+
+    }
+}
+
+#new {
+    padding: 40px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .image {
+            width: 850px;
+            height: 650px;
+            background: url(https://www.notebookcheck.com/fileadmin/Notebooks/News/_nc3/ps5_slim.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: white;
+            padding-left: 40px;
+            position: relative;
+
+            .about {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                gap: 20px;
+                position: absolute;
+                bottom: 100px;
+
+                div {
+                    font-size: 20px;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .imagesright {
+            .imagetop {
+                width: 720px;
+                height: 350px;
+                background: url(https://i.pinimg.com/originals/a4/b2/a6/a4b2a67a84819dcbc554c9782c74311f.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                color: white;
+                padding-left: 40px;
+                position: relative;
+
+                .about {
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                    gap: 20px;
+                    position: absolute;
+                    bottom: 50px;
+
+                    div {
+                        font-size: 20px;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .imagesbottom {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+
+                .imageleft {
+                    background: url(https://c4.wallpaperflare.com/wallpaper/92/197/169/music-sound-technology-black-background-wallpaper-preview.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 270px;
+                    width: 350px;
+                    color: white;
+                    padding-left: 40px;
+                    position: relative;
+
+                    .about {
+                        display: flex;
+                        flex-direction: column;
+                        width: 300px;
+                        gap: 20px;
+                        position: absolute;
+                        bottom: 50px;
+
+                        div {
+                            font-size: 20px;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .imageright {
+                    background: url(https://img.freepik.com/premium-photo/black-perfume-black-fabric-background_160204-2523.jpg);
+                    height: 270px;
+                    width: 350px;
+                    color: white;
+                    padding-left: 40px;
+                    position: relative;
+
+                    .about {
+                        display: flex;
+                        flex-direction: column;
+                        width: 300px;
+                        gap: 20px;
+                        position: absolute;
+                        bottom: 50px;
+
+                        div {
+                            font-size: 20px;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#about {
+    padding: 70px 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    .aboutBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        i {
+            background-color: black;
+            color: white;
+            height: 100px;
+            width: 100px;
+            display: grid;
+            place-items: center;
+            font-size: 40px;
+            border-radius: 50%;
+        }
+    }
+}
